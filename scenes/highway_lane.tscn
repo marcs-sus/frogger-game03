@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://cucd5f4t52td5"]
+
+[ext_resource type="Script" uid="uid://chojowcj6hopo" path="res://scripts/HighwayLane.cs" id="1_td5i1"]
+
+[node name="HighwayLane" type="Node2D"]
+script = ExtResource("1_td5i1")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="LeftMarkers" type="Node2D" parent="."]
+position = Vector2(-408, 0)
+
+[node name="Lane1" type="Marker2D" parent="LeftMarkers"]
+position = Vector2(0, -96)
+
+[node name="Lane3" type="Marker2D" parent="LeftMarkers"]
+position = Vector2(0, -32)
+
+[node name="Lane5" type="Marker2D" parent="LeftMarkers"]
+position = Vector2(0, 32)
+
+[node name="RightMarkers" type="Node2D" parent="."]
+position = Vector2(408, 0)
+
+[node name="Lane2" type="Marker2D" parent="RightMarkers"]
+position = Vector2(0, -64)
+
+[node name="Lane4" type="Marker2D" parent="RightMarkers"]
+
+[node name="Lane6" type="Marker2D" parent="RightMarkers"]
+position = Vector2(0, 64)
